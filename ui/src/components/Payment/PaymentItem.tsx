@@ -34,9 +34,8 @@ export const PaymentItem = (props: Props) => {
 
   const handleInputAmount = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    console.log("value", value);
+
     let newCurrentAmount = toNumber(value);
-    console.log("newCurrentAmount", newCurrentAmount);
 
     const newAmount = [...cart.amount];
     newAmount[index] = newCurrentAmount;
@@ -121,8 +120,11 @@ export const PaymentItem = (props: Props) => {
             )}
           </div>
           <div>
-            <div tw="mb-5">
-              {numberToVND(isHistoryPage ? (item.gia as any) : item.gia[0])}
+            <div>
+              <div tw="mb-5">
+                {numberToVND(isHistoryPage ? (item.gia as any) : item.gia[0])}
+              </div>
+              {isHistoryPage && <div>x{(item as any)?.amount}</div>}
             </div>
 
             {!isHistoryPage && (

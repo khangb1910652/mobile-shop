@@ -3,16 +3,16 @@ import "@rmwc/card/styles";
 import "@rmwc/typography/styles";
 import { RootState } from "app/reducer/reducer";
 import { setProductItems } from "app/slices/products.slice";
-import { toggleLoading, toggleMenuSelect } from "app/slices/toggle.slice";
+import { toggleLoading } from "app/slices/toggle.slice";
 import Loader from "components/Loader/Loader";
-import { isEmpty, map } from "lodash";
+import { isEmpty } from "lodash";
 
 import { Product, ProductItem } from "models/utils.model";
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffectOnce, useToggle } from "react-use";
+import { useEffectOnce } from "react-use";
 import { getProductItems } from "services/product.service";
 import "twin.macro";
 import tw from "twin.macro";
@@ -61,9 +61,6 @@ export const Home = () => {
   };
   useEffectOnce(() => {
     (async () => {
-      if (toggle.hasMenuSelect) {
-        dispatch(toggleMenuSelect(false));
-      }
       await fakeSleep(1500);
       const response = await getProductItems();
 
