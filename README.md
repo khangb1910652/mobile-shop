@@ -1,28 +1,28 @@
-# Hướng Dẫn Sử Dụng và Cài Đặt Mã Nguồn
+# User Guide and Source Code Installation Instructions
 
-## Bước 1: Cài Đặt Node.js
-1. Truy cập trang web chính thức của Node.js tại [https://nodejs.org](https://nodejs.org).
-2. Tải xuống phiên bản Node.js phù hợp với hệ điều hành của bạn (thường là phiên bản LTS - Long-Term Support).
-3. Mở tệp cài đặt đã tải xuống và làm theo hướng dẫn cài đặt trên màn hình.
-4. Hoàn tất quá trình cài đặt Node.js.
+## Step 1: Install Node.js
+1. Visit the official Node.js website at [https://nodejs.org](https://nodejs.org).
+2. Download the Node.js version suitable for your operating system (usually the LTS - Long-Term Support version).
+3. Open the downloaded installation file and follow the on-screen installation instructions.
+4. Complete the Node.js installation process.
 
-## Bước 2: Cài đặt cơ sở dữ liệu
-1. Khởi động MySQL trên ứng dụng XAMPP hoặc ứng dụng khác có hỗ trợ MySQL.
-2. Tạo một cơ sở dữ liệu có tên là "nlcs".
-3. Import cơ sở dữ liệu bằng file sql trong dự án.
+## Step 2: Install the Database
+1. Start MySQL on the XAMPP application or another application that supports MySQL.
+2. Create a database named "nlcs."
+3. Import the database using the SQL file provided in the project.
 
-## Bước 3: Cài Đặt Yarn
-1. Mở terminal hoặc command prompt trên máy chủ.
-2. Chạy lệnh `$ npm install --global yarn` để cài đặt gói thư viện Yarn.
+## Step 3: Install Yarn
+1. Open a terminal or command prompt on the server.
+2. Run the command `$ npm install --global yarn` to install the Yarn package manager.
 
-## Bước 4: Cài Đặt và Khởi Chạy Máy Chủ (Server)
-1. Mở terminal hoặc command prompt trên máy chủ.
-2. Di chuyển đến thư mục chứa mã dự án của máy chủ.
-3. Chạy lệnh `$ yarn` để cài đặt các phụ thuộc của dự án.
-4. Sau khi quá trình cài đặt hoàn tất, chạy lệnh `$ yarn start` để khởi chạy máy chủ.
+## Step 4: Install and Start the Server
+1. Open a terminal or command prompt on the server.
+2. Navigate to the directory containing the server project code.
+3. Run the command `$ yarn` to install project dependencies.
+4. After the installation is complete, run the command `$ yarn start` to start the server.
 
-## Bước 5: Cài Đặt và Chạy Giao Diện Người Dùng (UI)
-1. Mở terminal hoặc command prompt trên máy tính.
-2. Di chuyển đến thư mục chứa mã dự án của giao diện người dùng.
-3. Chạy lệnh `$ yarn` để cài đặt các phụ thuộc của dự án.
-4. Sau khi quá trình cài đặt hoàn tất, chạy lệnh `$ yarn start` để khởi chạy giao diện người dùng.
+## Step 5: Install and Run the User Interface (UI)
+1. Open a terminal or command prompt on your computer.
+2. Navigate to the directory containing the user interface project code.
+3. Run the command `$ yarn` to install project dependencies.
+4. After the installation is complete, run the command `$ yarn start` to launch the user interface.
