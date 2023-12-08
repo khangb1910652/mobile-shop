@@ -11,17 +11,17 @@
 2. Tạo một cơ sở dữ liệu có tên là "nlcs".
 3. Import cơ sở dữ liệu bằng file sql trong dự án.
 
-## Bước 2: Cài Đặt Yarn
+## Bước 3: Cài Đặt Yarn
 1. Mở terminal hoặc command prompt trên máy chủ.
 2. Chạy lệnh `$ npm install --global yarn` để cài đặt gói thư viện Yarn.
 
-## Bước 2: Cài Đặt và Khởi Chạy Máy Chủ (Server)
+## Bước 4: Cài Đặt và Khởi Chạy Máy Chủ (Server)
 1. Mở terminal hoặc command prompt trên máy chủ.
 2. Di chuyển đến thư mục chứa mã dự án của máy chủ.
 3. Chạy lệnh `$ yarn` để cài đặt các phụ thuộc của dự án.
 4. Sau khi quá trình cài đặt hoàn tất, chạy lệnh `$ yarn start` để khởi chạy máy chủ.
 
-## Bước 2: Cài Đặt và Chạy Giao Diện Người Dùng (UI)
+## Bước 5: Cài Đặt và Chạy Giao Diện Người Dùng (UI)
 1. Mở terminal hoặc command prompt trên máy tính.
 2. Di chuyển đến thư mục chứa mã dự án của giao diện người dùng.
 3. Chạy lệnh `$ yarn` để cài đặt các phụ thuộc của dự án.
