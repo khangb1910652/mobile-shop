@@ -8,7 +8,7 @@
 
 ## Step 2: Install the Database
 1. Start MySQL on the XAMPP application or another application that supports MySQL.
-2. Create a database named "nlcs."
+2. Create a database named "nlcs".
 3. Import the database using the SQL file provided in the project.
 
 ## Step 3: Install Yarn
